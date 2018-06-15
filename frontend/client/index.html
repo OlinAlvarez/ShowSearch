@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>TvMaze</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <style>
+        [v-cloak] {
+            display: none;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Search for TV Shows</h1>
+
+    <div id="query-app">
+
+        <div id="query">
+            <input type="text" class="form-control" placeholder="Enter name of a show. [Flexible with typos]" required v-model="queryString"
+                v-on:keyup.enter="queryShowName(queryString)">
+            <p v-if="error">
+                You must enter a query string!
+            </p>
+        </div>
+
+        <result-component v-bind:resultset="resultset" id="result"></result-component>
+        <individual-component v-bind:currentshow="currentshow" v-if="renderready" id="individual"></individual-component>
+
+    </div>
+
+    <script type="text/javascript" src="https://unpkg.com/vue@2.5.15/dist/vue.min.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/socket.io-client@2.1.0/dist/socket.io.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+
+</body>
+
+</html>

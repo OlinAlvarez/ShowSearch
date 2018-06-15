@@ -1,0 +1,44 @@
+#listyle {
+    padding-right: 50%;
+}
+
+#query{
+    padding-top: 10px;
+    padding-right: 50%;
+    padding-bottom: 30px;
+    padding-left: 30px;
+}
+
+#result{
+    float: left;
+    width:42%;
+}
+
+#individual{
+    float: left;
+    width:42%;
+}
+
+mark{
+    font-family: Impact, Charcoal, sans-serif;
+}
+
+h1{
+    color: blue;
+    text-decoration: underline;
+    text-indent: 50px;
+    text-shadow: 3px 2px red;
+}
+
+#eachshow:hover{
+    background-color: yellow;
+}
+
+h4{
+    font-weight: bold;
+}
+
+img{
+    height: 300px;
+    width: 200px;
+}

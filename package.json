@@ -1,0 +1,25 @@
+{
+  "name": "olinalvarez",
+  "version": "1.0.0",
+  "description": "app that searches through tvmaze api for shows and actors",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \\\"Error: no test specified\\\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OlinAlvarez/ShowSearch.git"
+  },
+  "keywords": [
+    "shows",
+    "tvmaze"
+  ],
+  "author": "Olin Alvarez, Pranil Dahal",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/OlinAlvarez/ShowSearch/issues"
+  },
+  "homepage": "https://github.com/OlinAlvarez/ShowSearch#readme"
+}
